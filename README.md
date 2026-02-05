@@ -1,51 +1,46 @@
-# 📊 Student Score Predictor
+# 🏠 Housing Price Prediction (Linear Regression)
 
-This project uses **Linear Regression** to predict student exam scores based on the number of hours studied.
+This project was developed as a Machine Learning homework assignment.
 
-It is a beginner-friendly Machine Learning project built to practice regression modeling and data visualization.
-
----
-
-## 🚀 Project Description
-
-The model learns the relationship between:
-
-Hours Studied → Exam Score
-
-After training, it predicts scores for unseen data.
+The goal is to predict housing prices using **Linear Regression**, while handling missing data using **SimpleImputer**.
 
 ---
 
-## 🧰 Technologies Used
+## 🎯 Objective
 
-- Python
+To practice:
+
+- Linear Regression
+- Handling missing values
+- Train-test splitting
+- Model evaluation
+
+---
+
+## 🧰 Libraries Used
+
 - pandas
+- numpy
 - scikit-learn
-- matplotlib
 
 ---
 
 ## 📁 Dataset
 
-The dataset contains:
+The dataset contains housing-related features and a target variable (house price).
 
-- Study Hours (input feature)
-- Exam Score (target value)
+Some values are missing (NaN), which are handled using mean imputation.
 
 ---
 
-## ⚙️ Workflow
+## ⚙️ Methodology
 
-1. Import dataset  
-2. Split into training and test sets (80% / 20%)  
-3. Train Linear Regression model  
-4. Make predictions  
-5. Evaluate model using:
+1. Load dataset  
+2. Split into input (X) and output (y)  
+3. Divide into training (80%) and testing (20%) sets  
+4. Handle missing values using **SimpleImputer (mean strategy)**  
+5. Train Linear Regression model  
+6. Make predictions  
+7. Evaluate using:
    - MAE (Mean Absolute Error)
-   - MSE (Mean Squared Error)  
-6. Visualize results with regression line
-
----
-
-```bash
-pip install pandas scikit-learn matplotlib
+   - MSE (Mean Squared Error)
